@@ -302,40 +302,7 @@ img {
     grid-row-start: 2;
 } */
 
-
-.riceclass {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    /* grid-template-rows: 1fr 1fr; */
-    width: 90%;
-    margin-left: 7%;
-    grid-gap: 0px;
-}
-
-#rice {
-    grid-column: 1/-1;
-    grid-row-start: 1;
-    background-color: rgb(255, 233, 247);
-    /* text-align: center; */
-    border: 2px rgb(105, 70, 70) solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 1.5em;
-    margin-left: 3%;
-    margin-right: 5%;
-}
-
-#ricepics{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 2%;
-    margin-left: 10px;
-}
-
-#rice1, #rice2{
-    object-fit: scale-down;
-}
-
+/* 
 #breadcontainer{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -344,7 +311,6 @@ img {
 
 #bread {
     background-color:white;
-    /* text-align: center; */
     border: 2px rgb(105, 70, 70) solid;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -356,44 +322,63 @@ img {
 }
 
 #challah {
-    /* object-fit: cover; */
+    object-fit: cover;
     grid-column-start: 2;
     grid-row-start: 3;
     margin-right: 10%;
-    object-fit: scale-down;
+
 }
 
 #bagel {
     grid-column: 1/2;
     grid-row-start: 3;
     margin-left: 10%;
-    /* object-fit: cover; */
-    object-fit: scale-down;
-
+    object-fit: cover;
 }
 
 #pretzel {
     grid-column: 1/2;
     grid-row-start: 4;
     margin-left: 10%;
-    /* object-fit: cover; */
-    object-fit: scale-down;
+    object-fit: cover;
+
 }
 
 #wholegrain {
     grid-column-start: 2;
     grid-row-start: 4;
-    /* object-fit: cover; */
+    object-fit: cover;
     margin-right: 10%;
-    object-fit: scale-down;
-
 
 }
 
 .bread_paragraph {
     grid-column: 1/-1;
     grid-row-start: 2;
+} */
+
+
+#bread {
+    background-color:white;
+    border: 2px rgb(105, 70, 70) solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+    margin-left: 3%;
+    margin-right: 5%;
 }
+
+.breadcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50 50%;
+    margin-left: 5%;
+}
+
+#bagel, #challah, #wholegrain, #pretzel {
+    object-fit: contain;
+}
+
 
 /* #creampuffcontainer{
     display: grid;
